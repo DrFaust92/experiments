@@ -1,6 +1,6 @@
 //tailRec
 
-def fib(n: Int): Int = {
+def tailRecFib(n: Int): Int = {
 
   def go(n: Int, first: Int, second: Int): Int =
     if (n <= 1) first
