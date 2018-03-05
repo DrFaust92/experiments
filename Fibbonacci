@@ -1,0 +1,22 @@
+//tailRec
+
+def fib(n: Int): Int = {
+
+  def go(n: Int, first: Int, second: Int): Int =
+    if (n <= 1) first
+    else if (n == 2) second
+    else go(n - 1, second, first + second)
+
+  go(n, 0, 1)
+
+}
+
+
+
+def fib(n: Int): Int = {
+
+    if (n <= 1) 0
+    else if (n == 2) 1
+    else fib(n - 1) + fib(n-2)
+
+}
